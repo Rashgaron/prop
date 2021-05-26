@@ -1,0 +1,14 @@
+test/DataBase/ModelAdapters/CtrlPersonaTest.class
+test/Domain/Models/Usuario/PersonaTest.class
+test/Domain/Controllers/AuthControllerTest.class
+test/Domain/Controllers/RecordTest.class
+test/UI/SignInCtrlTest.class
+test/Domain/Controllers/GameControllerTest.class
+test/Domain/Controllers/RecordControllerTest.class
+test/Domain/Models/Game/GameTest.class
+test/DataBase/ModelAdapters/CtrlStatisticsTest.class
+test/UI/validateUserDataTest.class
+test/Domain/Controllers/GameControllerTest$fakeDataFactory.class
+test/Domain/Controllers/AuthControllerTest$fakeDataFactory.class
+test/Domain/Models/Game/BoardTest.class
+test/Domain/Models/Usuario/BotTest.class

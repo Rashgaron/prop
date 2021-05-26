@@ -1,0 +1,7 @@
+.btn{
+    -fx-background-color:red;
+}
+
+.btn-register:hover{
+    -fx-background-color:blue;
+}

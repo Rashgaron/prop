@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Css/general.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Vistas.Controllers.JugarCtrl">
+   <children>
+      <GridPane layoutX="219.0" layoutY="116.0" prefHeight="168.0" prefWidth="162.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnCrearEstandar" mnemonicParsing="false" onAction="#goToEstandar" prefHeight="25.0" prefWidth="162.0" text="Normal Game">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-green" />
+               </styleClass></Button>
+            <Button fx:id="btnCrearPersonalizada" mnemonicParsing="false" onAction="#goToPersonalizada" prefHeight="25.0" prefWidth="162.0" text="Custom Game" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-green" />
+               </styleClass></Button>
+            <Button fx:id="btnGoBack" mnemonicParsing="false" onAction="#goToHomeMenu" prefHeight="25.0" prefWidth="166.0" text="Go Back" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btnGoBack" />
+               </styleClass></Button>
+            <Button fx:id="btnContinuar" mnemonicParsing="false" onAction="#goToContinuar" prefHeight="25.0" prefWidth="181.0" text="Continue Game" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-green" />
+               </styleClass></Button>
+         </children>
+      </GridPane>
+      <Button fx:id="closeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeWindow" text="Button" visible="false" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="82.0" prefWidth="591.0" text="PLAY">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

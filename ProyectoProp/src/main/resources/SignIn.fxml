@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="414.0" prefWidth="527.0" styleClass="background" stylesheets="@Css/general.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Vistas.Controllers.SignInCtrl">
+   <children>
+      <Pane layoutX="164.0" layoutY="97.0" prefHeight="258.0" prefWidth="199.0">
+         <children>
+            <TextField fx:id="inputEmail" layoutX="25.0" layoutY="36.0" styleClass="input" />
+            <TextField fx:id="inputPassword" layoutX="25.0" layoutY="96.0" styleClass="input" />
+            <Button fx:id="btnConfirmRegister" layoutX="70.0" layoutY="143.0" mnemonicParsing="false" onAction="#tryToRegister" text="Register">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-green" />
+               </styleClass></Button>
+            <Button fx:id="btnGoBack" layoutX="34.0" layoutY="193.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="24.0" prefWidth="132.0" text="Go Back">
+               <styleClass>
+                  <String fx:value="btnGoBack" />
+                  <String fx:value="btn" />
+               </styleClass></Button>
+            <Label layoutX="83.0" layoutY="14.0" prefHeight="17.0" prefWidth="34.0" text="Email" />
+            <Label fx:id="registerError" layoutX="59.0" layoutY="121.0" text="Error al registar" textFill="RED" visible="false" />
+            <Label fx:id="ouuuuu" layoutX="75.0" layoutY="67.0" text="Password" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Pane>
+      <Button fx:id="closeButton" layoutX="37.0" layoutY="21.0" mnemonicParsing="false" text="Button" visible="false" />
+      <Label alignment="CENTER" layoutX="5.0" layoutY="1.0" prefHeight="63.0" prefWidth="516.0" text="REGISTER A NEW USER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

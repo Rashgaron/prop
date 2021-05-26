@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: test.Domain.Controllers.GameControllerTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.11 s <<< FAILURE! - in test.Domain.Controllers.GameControllerTest
+makeMoveBot_IsABot_FunctionCalled(test.Domain.Controllers.GameControllerTest)  Time elapsed: 0.009 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class Domain.Controllers.GameController.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Debian
+JVM vendor version : 11.0.11+9-post-Debian-1
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 11.0.11+9-post-Debian-1
+JVM info           : mixed mode, sharing
+OS name            : Linux
+OS version         : 4.19.0-kali1-amd64
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at test.Domain.Controllers.GameControllerTest.makeMoveBot_IsABot_FunctionCalled(GameControllerTest.java:160)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at test.Domain.Controllers.GameControllerTest.makeMoveBot_IsABot_FunctionCalled(GameControllerTest.java:160)
+Caused by: java.lang.NoClassDefFoundError: javafx/collections/ObservableList
+	at test.Domain.Controllers.GameControllerTest.makeMoveBot_IsABot_FunctionCalled(GameControllerTest.java:160)
+Caused by: java.lang.ClassNotFoundException: javafx.collections.ObservableList
+	at test.Domain.Controllers.GameControllerTest.makeMoveBot_IsABot_FunctionCalled(GameControllerTest.java:160)
+
+Play_PvE_MakeBotMoveCalled(test.Domain.Controllers.GameControllerTest)  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class Domain.Controllers.GameController.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Debian
+JVM vendor version : 11.0.11+9-post-Debian-1
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 11.0.11+9-post-Debian-1
+JVM info           : mixed mode, sharing
+OS name            : Linux
+OS version         : 4.19.0-kali1-amd64
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at test.Domain.Controllers.GameControllerTest.Play_PvE_MakeBotMoveCalled(GameControllerTest.java:177)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at test.Domain.Controllers.GameControllerTest.Play_PvE_MakeBotMoveCalled(GameControllerTest.java:177)
+Caused by: java.lang.NoClassDefFoundError: javafx/collections/ObservableList
+	at test.Domain.Controllers.GameControllerTest.Play_PvE_MakeBotMoveCalled(GameControllerTest.java:177)
+Caused by: java.lang.ClassNotFoundException: javafx.collections.ObservableList
+	at test.Domain.Controllers.GameControllerTest.Play_PvE_MakeBotMoveCalled(GameControllerTest.java:177)
+

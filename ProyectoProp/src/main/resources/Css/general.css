@@ -1,0 +1,71 @@
+.btnGoBack,
+.btn-blue{
+
+    -fx-background-color:#3498db;
+    -fx-text-fill:white;
+
+
+}
+
+.btnGoBack:hover,
+.btn-blue:hover{
+
+    -fx-background-color:#2980b9;
+}
+
+.btn-green{
+
+    -fx-background-color:#2ecc71;
+    -fx-text-fill:white;
+
+}
+
+.btn-red{
+ 
+    -fx-background-color:#e74c3c;
+    -fx-text-fill:white;
+
+}
+
+.btn-orange{
+    -fx-background-color:#f1c40f;
+    -fx-text-fill:white;
+}
+.btn-green:hover{
+
+    -fx-background-color:#27ae60;
+}
+
+.btn-orange:hover{
+    -fx-background-color:#f39c12;
+}
+
+.btn-red:hover{
+    -fx-background-color:#c0392b;
+}
+.btn{
+
+    -fx-cursor:hand;
+
+}
+
+
+.background{
+
+    -fx-background-image: url("background.jpg");
+    -fx-background-size:cover;
+    -fx-background-repeat: no-repeat;
+
+}
+
+
+.input{
+    -fx-background-color:transparent;
+    -fx-border-style:hidden hidden solid hidden;
+    -fx-border-color:gray;
+}
+
+.input:focused{
+    -fx-border-color:#1abc9c;
+    -fx-text-fill:#1abc9c;
+}

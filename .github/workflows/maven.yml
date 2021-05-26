@@ -14,6 +14,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven
-      run:
+      steps:
+        - run:
            mvn -f ProyectoProp/pom.xml
            mvn --batch-mode --update-snapshots verify
